@@ -384,5 +384,5 @@ resource "oci_core_instance" "webServer2" {
     subnet_id        = "${oci_core_subnet.webServerSubnet2.id}"
     assign_public_ip = true
   }
-}
+ }
 
