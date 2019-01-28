@@ -12,7 +12,7 @@ pipeline {
       steps {
         checkout scm
         sh 'echo $SVC_ACCOUNT_KEY | base64 -d > env-vars'
-        sh 'sh /var/lib/jenkins/terraform/env-vars'
+        sh '/var/lib/jenkins/workspace/terraform/env-vars'
       }
     }
 
