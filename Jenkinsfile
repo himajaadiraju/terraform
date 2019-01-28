@@ -12,6 +12,7 @@ pipeline {
       steps {
         checkout scm
         sh '/var/lib/jenkins/workspace/terraform/env-vars'
+        sh 'echo $TF_VAR_private_key_path'
       }
     }
 
