@@ -6,7 +6,6 @@ variable "compartment_ocid" {}
 variable "region" {}
 
 provider "oci" {
- 
   region = "us-ashburn-1"
 }
 
@@ -277,7 +276,7 @@ resource "oci_core_instance" "dbSystem1" {
   shape               = "VM.Standard2.4"
 
   metadata {
-    ssh_authorized_keys = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDZgJClETAdRFuH4y/uRAgMLuLnn/QL07oZDBEEc9oxCdKCD9nH3GbKykQ+9RP9h29etzOfyDkRF6oB9Dh2ukzhEFcyBIkPVC1Lze1tVjtoXXms3fGpzrYPkq8UxDAwt+k66xuhptR9PSklJspyBEHYAClJN56t4zoRr/ZhJnafZmPQ41QfSWss8JGNiHlqRmlvRLgC/LwRY/q4E1ZE/VfR1RK5eDa6DZOu6UrjTf9fi3BIvoPcLgV7jPW/nFcOiGYSgJ/yq4Dpy8pcfs06DHqR43O4TlWXQ5Ysxr0K1VzbZwwX+Y0o64qQJDthZWbVAoV02oBHKbWzDVI8965HJMyr joboyle@Jamess-MacBook-Pro-2.local"
+    ssh_authorized_keys = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDBKIEkVFN6Rt5vjVid7NY/xDjefaaghR2bpXx0xVsBTDL/5J8D3aiaZuftzTk4r96T5xLXFFYBwmhPo7l30ScNbxOzkvjmle+5kAVQI1OHfN0+BACuH8Tw3A0nl5xhqohN3vCFKhOSRfy0NMQMrKV9EjerdAnEsYbKr59s8xk8a9im33YhptxFDijURDJThELkSfAXkm84EzEIuBT3jH6WOLN8TT/aKkrXNoIuV8u916mApglkCJBWkEnahFHrN/CUs5EepKx5kGYRZCpHMR6zcOVrxmGJ0oRdHkC4I8qkT0e3ajXYn8utz0IraJuhGZUOxfDUJyf3SCu30V56qNol hadiraju@dhcp-10-10-230-130.usdhcp.oraclecorp.com"
   }
 
   display_name = "dbSystem1"
@@ -299,7 +298,7 @@ resource "oci_core_instance" "dbSystem2" {
   shape               = "VM.Standard2.4"
 
   metadata {
-    ssh_authorized_keys = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDZgJClETAdRFuH4y/uRAgMLuLnn/QL07oZDBEEc9oxCdKCD9nH3GbKykQ+9RP9h29etzOfyDkRF6oB9Dh2ukzhEFcyBIkPVC1Lze1tVjtoXXms3fGpzrYPkq8UxDAwt+k66xuhptR9PSklJspyBEHYAClJN56t4zoRr/ZhJnafZmPQ41QfSWss8JGNiHlqRmlvRLgC/LwRY/q4E1ZE/VfR1RK5eDa6DZOu6UrjTf9fi3BIvoPcLgV7jPW/nFcOiGYSgJ/yq4Dpy8pcfs06DHqR43O4TlWXQ5Ysxr0K1VzbZwwX+Y0o64qQJDthZWbVAoV02oBHKbWzDVI8965HJMyr joboyle@Jamess-MacBook-Pro-2.local"
+    ssh_authorized_keys = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDBKIEkVFN6Rt5vjVid7NY/xDjefaaghR2bpXx0xVsBTDL/5J8D3aiaZuftzTk4r96T5xLXFFYBwmhPo7l30ScNbxOzkvjmle+5kAVQI1OHfN0+BACuH8Tw3A0nl5xhqohN3vCFKhOSRfy0NMQMrKV9EjerdAnEsYbKr59s8xk8a9im33YhptxFDijURDJThELkSfAXkm84EzEIuBT3jH6WOLN8TT/aKkrXNoIuV8u916mApglkCJBWkEnahFHrN/CUs5EepKx5kGYRZCpHMR6zcOVrxmGJ0oRdHkC4I8qkT0e3ajXYn8utz0IraJuhGZUOxfDUJyf3SCu30V56qNol hadiraju@dhcp-10-10-230-130.usdhcp.oraclecorp.com"
   }
 
   display_name = "dbSystem2"
@@ -329,7 +328,7 @@ resource "oci_core_instance" "bastionInstance" {
   shape = "VM.Standard2.4"
 
   metadata {
-    ssh_authorized_keys = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDZgJClETAdRFuH4y/uRAgMLuLnn/QL07oZDBEEc9oxCdKCD9nH3GbKykQ+9RP9h29etzOfyDkRF6oB9Dh2ukzhEFcyBIkPVC1Lze1tVjtoXXms3fGpzrYPkq8UxDAwt+k66xuhptR9PSklJspyBEHYAClJN56t4zoRr/ZhJnafZmPQ41QfSWss8JGNiHlqRmlvRLgC/LwRY/q4E1ZE/VfR1RK5eDa6DZOu6UrjTf9fi3BIvoPcLgV7jPW/nFcOiGYSgJ/yq4Dpy8pcfs06DHqR43O4TlWXQ5Ysxr0K1VzbZwwX+Y0o64qQJDthZWbVAoV02oBHKbWzDVI8965HJMyr joboyle@Jamess-MacBook-Pro-2.local"
+    ssh_authorized_keys = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDBKIEkVFN6Rt5vjVid7NY/xDjefaaghR2bpXx0xVsBTDL/5J8D3aiaZuftzTk4r96T5xLXFFYBwmhPo7l30ScNbxOzkvjmle+5kAVQI1OHfN0+BACuH8Tw3A0nl5xhqohN3vCFKhOSRfy0NMQMrKV9EjerdAnEsYbKr59s8xk8a9im33YhptxFDijURDJThELkSfAXkm84EzEIuBT3jH6WOLN8TT/aKkrXNoIuV8u916mApglkCJBWkEnahFHrN/CUs5EepKx5kGYRZCpHMR6zcOVrxmGJ0oRdHkC4I8qkT0e3ajXYn8utz0IraJuhGZUOxfDUJyf3SCu30V56qNol hadiraju@dhcp-10-10-230-130.usdhcp.oraclecorp.com"
   }
 
   display_name = "bastionInstance"
@@ -352,7 +351,7 @@ resource "oci_core_instance" "webServer1" {
   shape = "VM.Standard2.4"
 
   metadata {
-    ssh_authorized_keys = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDZgJClETAdRFuH4y/uRAgMLuLnn/QL07oZDBEEc9oxCdKCD9nH3GbKykQ+9RP9h29etzOfyDkRF6oB9Dh2ukzhEFcyBIkPVC1Lze1tVjtoXXms3fGpzrYPkq8UxDAwt+k66xuhptR9PSklJspyBEHYAClJN56t4zoRr/ZhJnafZmPQ41QfSWss8JGNiHlqRmlvRLgC/LwRY/q4E1ZE/VfR1RK5eDa6DZOu6UrjTf9fi3BIvoPcLgV7jPW/nFcOiGYSgJ/yq4Dpy8pcfs06DHqR43O4TlWXQ5Ysxr0K1VzbZwwX+Y0o64qQJDthZWbVAoV02oBHKbWzDVI8965HJMyr joboyle@Jamess-MacBook-Pro-2.local"
+    ssh_authorized_keys = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDBKIEkVFN6Rt5vjVid7NY/xDjefaaghR2bpXx0xVsBTDL/5J8D3aiaZuftzTk4r96T5xLXFFYBwmhPo7l30ScNbxOzkvjmle+5kAVQI1OHfN0+BACuH8Tw3A0nl5xhqohN3vCFKhOSRfy0NMQMrKV9EjerdAnEsYbKr59s8xk8a9im33YhptxFDijURDJThELkSfAXkm84EzEIuBT3jH6WOLN8TT/aKkrXNoIuV8u916mApglkCJBWkEnahFHrN/CUs5EepKx5kGYRZCpHMR6zcOVrxmGJ0oRdHkC4I8qkT0e3ajXYn8utz0IraJuhGZUOxfDUJyf3SCu30V56qNol hadiraju@dhcp-10-10-230-130.usdhcp.oraclecorp.com"
   }
 
   display_name = "webServer1"
@@ -375,7 +374,7 @@ resource "oci_core_instance" "webServer2" {
   shape = "VM.Standard2.4"
 
   metadata {
-    ssh_authorized_keys = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDZgJClETAdRFuH4y/uRAgMLuLnn/QL07oZDBEEc9oxCdKCD9nH3GbKykQ+9RP9h29etzOfyDkRF6oB9Dh2ukzhEFcyBIkPVC1Lze1tVjtoXXms3fGpzrYPkq8UxDAwt+k66xuhptR9PSklJspyBEHYAClJN56t4zoRr/ZhJnafZmPQ41QfSWss8JGNiHlqRmlvRLgC/LwRY/q4E1ZE/VfR1RK5eDa6DZOu6UrjTf9fi3BIvoPcLgV7jPW/nFcOiGYSgJ/yq4Dpy8pcfs06DHqR43O4TlWXQ5Ysxr0K1VzbZwwX+Y0o64qQJDthZWbVAoV02oBHKbWzDVI8965HJMyr joboyle@Jamess-MacBook-Pro-2.local"
+    ssh_authorized_keys = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDBKIEkVFN6Rt5vjVid7NY/xDjefaaghR2bpXx0xVsBTDL/5J8D3aiaZuftzTk4r96T5xLXFFYBwmhPo7l30ScNbxOzkvjmle+5kAVQI1OHfN0+BACuH8Tw3A0nl5xhqohN3vCFKhOSRfy0NMQMrKV9EjerdAnEsYbKr59s8xk8a9im33YhptxFDijURDJThELkSfAXkm84EzEIuBT3jH6WOLN8TT/aKkrXNoIuV8u916mApglkCJBWkEnahFHrN/CUs5EepKx5kGYRZCpHMR6zcOVrxmGJ0oRdHkC4I8qkT0e3ajXYn8utz0IraJuhGZUOxfDUJyf3SCu30V56qNol hadiraju@dhcp-10-10-230-130.usdhcp.oraclecorp.com"
   }
 
   display_name = "webServer2"
@@ -383,6 +382,5 @@ resource "oci_core_instance" "webServer2" {
   create_vnic_details {
     subnet_id        = "${oci_core_subnet.webServerSubnet2.id}"
     assign_public_ip = true
-   }
- }
-
+  }
+}
