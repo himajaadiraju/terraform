@@ -11,8 +11,8 @@ pipeline {
     stage('Checkout') {
       steps {
         checkout scm
-        sh '/var/lib/jenkins/workspace/terraform/env-vars'
-        sh 'echo ${TF_VAR_private_key_path}'
+        sh '/var/lib/jenkins/workspace/terraform/terraform.tfvars'
+        
       }
     }
 
